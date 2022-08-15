@@ -89,6 +89,13 @@ public class Runner {
 
 //        3. Print True if the list contains a 1 next to a 1 somewhere.
 //        4. Print the sum of the numbers,
+
+        int sum = 0; // Name variable and it's initial int value
+        for (int num: numbers) //This makes the int 'num' run through every value in our Array List
+        {
+            sum +=num; //Here, each time one number from our array is added to our sum, it moves onto the next
+        }
+        System.out.println("The sum of all values is " + sum);
 //        5. Print the sum of the numbers...
 //           ...except the number 13 is unlucky, so it does not count...
 //           ...and numbers that come immediately after a 13 also do not count.
