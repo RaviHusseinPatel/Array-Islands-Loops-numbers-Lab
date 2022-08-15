@@ -58,17 +58,37 @@ public class Runner {
         System.out.println("List of all numbers: " + numbers);
 
 //        1. Print out a list of the even integers
-                for (int i=0; i<numbers.size(); i++){
-                    if (numbers[i] % 2 ==0){
 
-                    }
-                }
 
 
 
 
 
 //        2. Print the difference between the largest and smallest value
+
+//        Obtain largest value in an Array List using for loop:
+
+        int max = numbers.get(0);
+
+        for (int i= 0; i<numbers.size(); i++) {
+            if (numbers.get(i) > max) {
+                max = numbers.get(i);
+            }
+
+        }
+
+//          Obtain smallest value in an Array List using for loop:
+
+        int min = numbers.get(0);
+
+        for (int i= 0; i<numbers.size(); i++) {
+            if (numbers.get(i) < min) {
+                min = numbers.get(i);
+            }
+
+        }
+        System.out.println("The difference between the highest and lowest value is " + (max- min));
+
 //        3. Print True if the list contains a 1 next to a 1 somewhere.
 //        4. Print the sum of the numbers,
 //        5. Print the sum of the numbers...
