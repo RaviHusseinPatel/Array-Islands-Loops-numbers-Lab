@@ -1,5 +1,6 @@
 import java.lang.reflect.Array;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Runner {
 
@@ -59,10 +60,9 @@ public class Runner {
 
 //        1. Print out a list of the even integers
 
+        List n= numbers.stream().filter(i->i%2==0).collect(Collectors.toList());
 
-
-
-
+        System.out.println("The even numbers are " +n);
 
 //        2. Print the difference between the largest and smallest value
 
@@ -76,9 +76,7 @@ public class Runner {
             }
 
         }
-
 //          Obtain smallest value in an Array List using for loop:
-
         int min = numbers.get(0);
 
         for (int i= 0; i<numbers.size(); i++) {
